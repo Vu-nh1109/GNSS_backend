@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Raw UBX data files
+raw/
+
+# Processed GNSS data output
+data/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db
