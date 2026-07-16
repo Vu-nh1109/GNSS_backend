@@ -7,6 +7,19 @@ raw/
 # Processed GNSS data output
 data/
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+*.egg
+.venv/
+venv/
+env/
+
 # Logs
 *.log
 npm-debug.log*
