@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -417,7 +418,7 @@ app.get('/api/fileData/:fname', (req, res) => {
   const p = path.join(getRawDirForDevice(deviceId), fname);
   if (!fs.existsSync(p)) return res.status(404).json({ ok: false, error: 'file not found' });
 
-  const pythonBin = 'python';
+  const pythonBin = process.env.PYTHON_BIN || 'python3';
   const args = ['python/ubx_reader.py', '--device', deviceId, '--file', p];
   if (gnssId !== null) {
     args.push('--gnss', String(gnssId));
