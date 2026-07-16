@@ -2,10 +2,10 @@
 node_modules/
 
 # Raw UBX data files
-raw/
+#raw/
 
 # Processed GNSS data output
-data/
+#data/
 
 # Python
 __pycache__/
