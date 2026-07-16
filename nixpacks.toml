@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["nodejs_20", "python3", "python3Packages.pip"]
-
-[phases.install]
-cmds = ["npm ci", "python3 -m pip install --break-system-packages -r requirements.txt"]
-
-[start]
-cmd = "node server.js"
