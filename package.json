@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "lint": "eslint server.js"
+    "lint": "eslint server.js",
+    "install:python": "pip install -r requirements.txt"
   },
   "dependencies": {
     "body-parser": "^1.20.0",
